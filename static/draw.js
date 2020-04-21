@@ -1,7 +1,5 @@
 var canvas;
 var context;
-var canvasWidth = 100;
-var canvasHeight = 100;
 var lineWidth = 8;
 var clickX = new Array();
 var clickY = new Array();
