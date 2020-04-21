@@ -18,7 +18,7 @@ label_dict = {0:'Cat', 1:'Giraffe', 2:'Sheep', 3:'Bat', 4:'Octopus', 5:'Camel'}
 graph = tf.get_default_graph()
 
 # Use pickle to load in the pre-trained model.
-with open(f'D:\Documents\Polytechnique\Trimestre 3\DrawApp\Drawing_App\model_cnn.pkl', 'rb') as f:
+with open(f'model_cnn.pkl', 'rb') as f:
         model = pickle.load(f)
 
 #Initializing new Flask instance. Find the html template in "templates".
