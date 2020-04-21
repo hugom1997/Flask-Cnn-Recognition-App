@@ -43,7 +43,7 @@ def predict():
                     draw = request.form['url']
                     #Removing the useless part of the url.
                     draw = draw[init_Base64:]
-                    #Decofing
+                    #Decoding
                     draw_decoded = base64.b64decode(draw)
                     image = np.asarray(bytearray(draw_decoded), dtype="uint8")
                     image = cv2.imdecode(image, cv2.IMREAD_GRAYSCALE)
@@ -53,10 +53,8 @@ def predict():
                     vect = vect.reshape(1, 1, 28, 28).astype('float32')
                     #Launch prediction
                     my_prediction = model.predict(vect)
-                    print(my_prediction)
                     #Getting the index of the maximum prediction
                     index = np.argmax(my_prediction[0])
-                    print(index)
                     #Associating the index and its value within the dictionnary
                     final_pred = label_dict[index]
 
