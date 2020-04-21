@@ -1,6 +1,5 @@
 var canvas;
 var context;
-var lineWidth = 8;
 var clickX = new Array();
 var clickY = new Array();
 var clickDrag = new Array();
