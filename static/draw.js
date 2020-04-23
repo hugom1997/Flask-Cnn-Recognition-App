@@ -74,10 +74,9 @@ for (var i = 0; i < clickX.length; i++) {
 **/
 function save() {
     var image = new Image();
+    var url = document.getElementById('url');
     image.id = "pic";
     image.src = canvas.toDataURL();
-    var form = document.getElementById('myForm');
-    var url = document.getElementById('url');
     url.value = image.src;
 
 }
