@@ -73,15 +73,11 @@ for (var i = 0; i < clickX.length; i++) {
     - Add the string to an hidden tag of the form so Flask can reach it.
 **/
 function save() {
-    console.log('test')
     var image = new Image();
     image.id = "pic";
     image.src = canvas.toDataURL();
     var form = document.getElementById('myForm');
-    console.log('image', image);
     var url = document.getElementById('url');
     url.value = image.src;
-    console.log('url', url.value)
-
 
 }
