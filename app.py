@@ -1,6 +1,5 @@
 import flask
 from flask import Flask,render_template,url_for,request
-import pandas as pd
 import pickle
 import base64
 import numpy as np
